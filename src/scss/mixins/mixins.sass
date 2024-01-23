@@ -1,0 +1,20 @@
+@mixin positionAbs($left, $bottom, $transX: 0, $transY: 0)
+    position: absolute
+    left: $left
+    bottom: $bottom
+    transform: translate($transX, $transY)
+@mixin flex($justify-content, $align-items, $direction: row, $wrap: no-wrap)
+    display: flex
+    justify-content: $justify-content
+    align-items: $align-items
+    flex-wrap: $wrap
+    flex-direction: $direction
+@mixin text($color,$Weight, $size, $space,$lh: 120%)
+    color: $color
+    font-weight: $Weight
+    font-size: $size
+    line-height: $lh
+    letter-spacing: $space
+@mixin link
+    text-decoration: none
+    cursor: pointer

@@ -1,0 +1,30 @@
+@use '../vars/vars' as vars
+@use '../mixins/mixins' as mixins
+footer
+    height: 250px
+    width: 100%
+    position: relative
+    background: vars.$color-main
+    flex-shrink: 1
+    min-height: 230px
+    padding-top: 55px
+    a
+        color: #fff
+        text-decoration: none
+    .footer_nav
+        @include mixins.flex(space-between, center)
+        @include mixins.text(#fff,500, 18px, 0.18px)
+        
+    .footer_links
+            height:57px
+            @include mixins.flex(space-between, flex-start, column)
+
+.license
+    @include mixins.text(#fff,500, 18px, 0.18px)
+    @include mixins.positionAbs(50%, 30px, -50%)
+    a
+        @include mixins.link
+        
+
+            
+

@@ -1,0 +1,101 @@
+@use '../vars/vars' as vars
+@use '../mixins/mixins' as mixins
+.filters
+    position: absolute
+    z-index: 1
+    &_mobile-button
+        display: none
+    &_title
+        @include mixins.text(#000,600,18px, 0.18px)
+    select
+        position: relative
+        width: 200px
+        height: 51px
+        margin-bottom: 76px
+        margin-top: 20px
+        outline: none
+        border: none
+        border-radius: 100px
+        appearance: none
+        overflow: hidden
+        padding-left: 60px
+        background:  url('../img/down__white.svg') no-repeat 125px vars.$color-main
+        @include mixins.text(#fff,600,18px, 0.18px)
+        option       
+            color: #000
+            background: #fff
+    .range
+        @include mixins.flex(flex-start, flex-start , column)
+        margin-top: 30px
+        label
+            @include mixins.text(#000,500,18px, 0.18px)
+            margin-bottom: 10px
+        input
+            appearance: none
+            width: 190px
+            height: 2px
+            border-radius: 10%
+            background: vars.$color-main
+            margin-bottom: 37px
+            &::-webkit-slider-thumb
+                appearance: none
+                height: 14px
+                width: 14px
+                background: vars.$color-main
+                border-radius: 100%
+    .radio
+        @include mixins.flex(space-between, flex-start, column)
+        height: 80px
+        margin: 30px 0px
+        &_item
+            @include mixins.flex(flex-start, center)
+            input
+                appearance: none
+                height: 14px
+                width: 14px
+                border: 1px solid vars.$color-main
+                border-radius: 100%
+                transition: 0.3s all
+                &:checked
+                    background: vars.$color-main
+            label
+                padding-left: 12px
+    .checks
+        height: 150px
+        margin-top: 33px
+        @include mixins.flex(space-between, flex-start, column)
+        
+        label
+            @include mixins.flex(inherit, center)
+            input
+                display: none
+
+            input:checked + span::before
+                transform: translate(-50%, -50%) rotate(45deg) scale(1)
+
+        span
+            display: inline-block
+            background: #fff
+            height: 18px
+            width: 18px
+            border-radius: 2px
+            border: 1px solid vars.$color-main
+            position: relative
+            margin-right: 12px
+            &:before
+                content: ''
+                display: inline-block
+                width: 5px
+                height: 12px
+                border: 3.7px solid vars.$color-main    
+                border-top: none
+                border-left: none
+                position: absolute
+                left: 50%
+                // top: 40%
+                @include mixins.positionAbs(50%, -31% , -50% , -50% )
+                
+                transform: rotate(45deg) scale(0)
+                transition: 0.2s all
+
+

@@ -1,0 +1,147 @@
+.filters {
+  position: absolute;
+  z-index: 1;
+}
+.filters_mobile-button {
+  display: none;
+}
+.filters_title {
+  color: #000;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 120%;
+  letter-spacing: 0.18px;
+}
+.filters select {
+  position: relative;
+  width: 200px;
+  height: 51px;
+  margin-bottom: 76px;
+  margin-top: 20px;
+  outline: none;
+  border: none;
+  border-radius: 100px;
+  appearance: none;
+  overflow: hidden;
+  padding-left: 60px;
+  background: url("../img/down__white.svg") no-repeat 125px #C05AFF;
+  color: #fff;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 120%;
+  letter-spacing: 0.18px;
+}
+.filters select option {
+  color: #000;
+  background: #fff;
+}
+.filters .range {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: no-wrap;
+  flex-direction: column;
+  margin-top: 30px;
+}
+.filters .range label {
+  color: #000;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 120%;
+  letter-spacing: 0.18px;
+  margin-bottom: 10px;
+}
+.filters .range input {
+  appearance: none;
+  width: 190px;
+  height: 2px;
+  border-radius: 10%;
+  background: #C05AFF;
+  margin-bottom: 37px;
+}
+.filters .range input::-webkit-slider-thumb {
+  appearance: none;
+  height: 14px;
+  width: 14px;
+  background: #C05AFF;
+  border-radius: 100%;
+}
+.filters .radio {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: no-wrap;
+  flex-direction: column;
+  height: 80px;
+  margin: 30px 0px;
+}
+.filters .radio_item {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: no-wrap;
+  flex-direction: row;
+}
+.filters .radio_item input {
+  appearance: none;
+  height: 14px;
+  width: 14px;
+  border: 1px solid #C05AFF;
+  border-radius: 100%;
+  transition: 0.3s all;
+}
+.filters .radio_item input:checked {
+  background: #C05AFF;
+}
+.filters .radio_item label {
+  padding-left: 12px;
+}
+.filters .checks {
+  height: 150px;
+  margin-top: 33px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: no-wrap;
+  flex-direction: column;
+}
+.filters .checks label {
+  display: flex;
+  justify-content: inherit;
+  align-items: center;
+  flex-wrap: no-wrap;
+  flex-direction: row;
+}
+.filters .checks label input {
+  display: none;
+}
+.filters .checks label input:checked + span::before {
+  transform: translate(-50%, -50%) rotate(45deg) scale(1);
+}
+.filters .checks span {
+  display: inline-block;
+  background: #fff;
+  height: 18px;
+  width: 18px;
+  border-radius: 2px;
+  border: 1px solid #C05AFF;
+  position: relative;
+  margin-right: 12px;
+}
+.filters .checks span:before {
+  content: "";
+  display: inline-block;
+  width: 5px;
+  height: 12px;
+  border: 3.7px solid #C05AFF;
+  border-top: none;
+  border-left: none;
+  position: absolute;
+  left: 50%;
+  position: absolute;
+  left: 50%;
+  bottom: -31%;
+  transform: translate(-50%, -50%);
+  transform: rotate(45deg) scale(0);
+  transition: 0.2s all;
+}

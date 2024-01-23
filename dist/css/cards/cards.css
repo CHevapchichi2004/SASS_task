@@ -1,0 +1,195 @@
+.main {
+  position: relative;
+  min-height: 400px;
+}
+.main .layer {
+  width: 100vw;
+  height: 100%;
+  position: absolute;
+  z-index: -1;
+  overflow: hidden;
+}
+.main .layer_lines {
+  position: absolute;
+  left: 3.78%;
+  bottom: 1.7%;
+  transform: translate(0, 0);
+}
+.main .layer_ellipse {
+  position: absolute;
+  left: 84%;
+  bottom: 54.5%;
+  transform: translate(0, 0);
+}
+.main .layer_star {
+  position: absolute;
+  left: 98.4%;
+  bottom: 10.5%;
+  transform: translate(-100%, 0);
+}
+
+.market {
+  position: relative;
+  padding-left: 416px;
+}
+.market_title {
+  display: flex;
+  justify-content: inherit;
+  align-items: center;
+  flex-wrap: no-wrap;
+  flex-direction: row;
+  color: #000;
+  font-weight: 800;
+  font-size: 48px;
+  line-height: 120%;
+  letter-spacing: 0.48px;
+  width: 680px;
+  height: 80px;
+  padding-left: 30px;
+}
+.market_title span {
+  text-align: center;
+  padding-top: 10px;
+  width: 510px;
+  height: 100%;
+  background: #C9FF50;
+  border-radius: 100px;
+}
+.market .cards {
+  margin-top: 44px;
+  margin-bottom: 140px;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+.market .cards .card {
+  margin: 15px 30px;
+  z-index: -1;
+  width: 400px;
+  height: 341px;
+  border-radius: 30px;
+  background: #C05AFF;
+  backdrop-filter: blur(2x);
+  padding-top: 24px;
+  position: relative;
+}
+.market .cards .card_name {
+  color: #fff;
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 120%;
+  letter-spacing: 0.24px;
+  margin-left: 22px;
+}
+.market .cards .card_level {
+  color: #FFFD50;
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 120%;
+  letter-spacing: 0.24px;
+  margin-left: 22px;
+}
+.market .cards .card_letters {
+  right: 40px;
+  z-index: -1;
+  position: absolute;
+  left: none;
+  bottom: 122px;
+  transform: translate(0, 0);
+}
+.market .cards .card_teacher {
+  position: absolute;
+  left: none;
+  bottom: 0;
+  transform: translate(0, 0);
+}
+.market .cards .card_message {
+  top: 101px;
+  position: absolute;
+  left: 148px;
+  bottom: none;
+  transform: translate(0, 0);
+}
+.market .cards .card_message_body {
+  width: 184px;
+  height: 32px;
+  border-radius: 680px;
+  background: #C9FF50;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: no-wrap;
+  flex-direction: row;
+}
+.market .cards .card_message_little-part {
+  top: 25px;
+  position: absolute;
+  left: -10px;
+  bottom: none;
+  transform: translate(0, 0);
+}
+.market .cards .card_language {
+  position: absolute;
+  left: 144px;
+  bottom: 12px;
+  transform: translate(0, 0);
+}
+.market .cards .card_new-price {
+  color: #fff;
+  font-weight: 800;
+  font-size: 40px;
+  line-height: 120%;
+  letter-spacing: 0.4px;
+  position: absolute;
+  left: 196px;
+  bottom: 110px;
+  transform: translate(0, 0);
+}
+.market .cards .card_old-price {
+  position: absolute;
+  left: 281px;
+  bottom: 86px;
+  transform: translate(0, 0);
+  color: #fff;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 120%;
+  letter-spacing: 0.2px;
+  text-decoration: line-through #FF50BA;
+}
+.market .cards .card_procent {
+  width: 48px;
+  height: 18px;
+  border-radius: 199px;
+  background: #ff50ba;
+  color: #fff;
+  font-weight: 600;
+  font-size: 10px;
+  line-height: 120%;
+  letter-spacing: 0.1px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: no-wrap;
+  flex-direction: row;
+  position: absolute;
+  left: 327px;
+  bottom: 110px;
+  transform: translate(0, 0);
+}
+.market .cards .card_more {
+  position: absolute;
+  left: 254px;
+  bottom: 27px;
+  transform: translate(0, 0);
+  color: #fff;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 120%;
+  letter-spacing: 0.18px;
+  text-decoration: none;
+  cursor: pointer;
+}

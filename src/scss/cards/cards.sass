@@ -1,0 +1,99 @@
+@use '../vars/vars' as vars
+@use '../mixins/mixins' as mixins
+
+.main
+    position: relative
+    min-height: 400px
+    .layer
+        width: 100vw
+        height: 100%
+        position: absolute
+        z-index: -1
+        overflow: hidden
+        &_lines
+            @include mixins.positionAbs(3.78%, 1.7%)
+        &_ellipse
+            @include mixins.positionAbs(84%, 54.5%)
+        &_star
+            @include mixins.positionAbs(98.4%,10.5%, -100%)
+.market
+    position: relative
+    padding-left: 416px
+    &_title
+        @include mixins.flex(inherit, center)
+        @include mixins.text(#000, 800, 48px, 0.48px)
+        width: 680px
+        height: 80px
+        padding-left: 30px
+        span
+            text-align: center
+            padding-top: 10px
+            width: 510px
+            height: 100%
+            background: vars.$green
+            border-radius: 100px
+    .cards
+        margin-top: 44px
+        margin-bottom: 140px
+        width: 100%
+        @include mixins.flex(flex-start, flex-start , row , wrap)
+        .card
+            margin: 15px 30px
+            z-index: -1
+            width: 400px
+            height: 341px
+            border-radius: 30px
+            background: vars.$color-main
+            backdrop-filter: blur(2x)
+            padding-top:24px
+            position: relative
+            &_name
+                @include mixins.text(#fff, 800 , 24px, 0.24px )
+                margin-left: 22px
+            &_level
+                @include mixins.text(#FFFD50, 800 , 24px , 0.24px )
+                margin-left: 22px
+            &_letters
+                right: 40px
+                z-index: -1
+                @include mixins.positionAbs(none ,122px)       
+            &_teacher
+                @include mixins.positionAbs(none, 0 ,)
+            &_message
+                top: 101px
+                @include mixins.positionAbs(148px, none)
+                &_body
+                    width:184px
+                    height: 32px
+                    border-radius: 680px
+                    background: vars.$green
+                    @include mixins.flex(center, center)
+                &_little-part
+                    top: 25px
+                    @include mixins.positionAbs(-10px, none)
+                    
+            &_language
+                @include mixins.positionAbs(144px, 12px)
+                
+            &_new-price
+                @include mixins.text(#fff,800 , 40px , 0.4px )
+                @include mixins.positionAbs(196px, 110px)
+            &_old-price
+                @include mixins.positionAbs(281px,86px)
+                @include mixins.text(#fff,800 , 20px , 0.2px )
+                text-decoration: line-through #FF50BA
+            &_procent
+                width: 48px
+                height: 18px
+                border-radius: 199px
+                background: #ff50ba
+                @include mixins.text(#fff,600 ,10px , 0.1px )
+                @include mixins.flex(center, center)
+                @include mixins.positionAbs(327px, 110px)
+                
+
+            &_more
+                @include mixins.positionAbs(254px, 27px)
+                @include mixins.text(#fff,500 , 18px, 0.18px)
+                @include mixins.link
+                
